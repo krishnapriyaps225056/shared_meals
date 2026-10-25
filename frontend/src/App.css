@@ -1,0 +1,196 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f8f2;
+  color: #203528;
+}
+
+button, input {
+  font: inherit;
+}
+
+.page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
+
+.hero {
+  padding: 55px 30px;
+  text-align: center;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #174c35, #39865b);
+  color: white;
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  margin: 28px 0 12px;
+}
+
+.hero p {
+  color: #e0f1e5;
+  margin-bottom: 30px;
+}
+
+.hero-button, .primary-button, .claim-button {
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero-button {
+  background: white;
+  color: #174c35;
+}
+
+.panel, .meals {
+  margin-top: 28px;
+  padding: 28px;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 5px 22px #193e1710;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.muted {
+  color: #6b7b70;
+}
+
+.donation-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.donation-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.donation-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d7e0d7;
+  border-radius: 9px;
+  background: #fcfdfb;
+}
+
+.primary-button {
+  background: #267349;
+  color: white;
+  align-self: end;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 8px;
+  background: #eaf6ec;
+  color: #205b36;
+}
+
+.meal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.meal-card {
+  padding: 22px;
+  border: 1px solid #e2eae1;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.meal-icon {
+  font-size: 32px;
+}
+
+.meal-card h3 {
+  margin-bottom: 12px;
+}
+
+.meal-card p {
+  color: #59695e;
+  overflow-wrap: anywhere;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.available {
+  background: #e2f5e7;
+  color: #206738;
+}
+
+.claimed {
+  background: #eeeeee;
+  color: #555;
+}
+
+.claim-button {
+  width: 100%;
+  margin-top: 10px;
+  background: #e1f1e5;
+  color: #205b36;
+}
+
+.empty {
+  padding: 25px;
+  border-radius: 12px;
+  background: #f5f8f2;
+  color: #617064;
+  text-align: center;
+}
+
+footer {
+  padding: 30px 0 12px;
+  text-align: center;
+  color: #718174;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 14px;
+  }
+
+  .donation-form {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 38px 18px;
+  }
+
+  .panel, .meals {
+    padding: 20px;
+  }
+}
